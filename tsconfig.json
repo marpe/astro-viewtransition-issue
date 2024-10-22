@@ -1,0 +1,21 @@
+{
+	"extends": "astro/tsconfigs/base",
+	"include": [".astro/types.d.ts", "**/*"],
+	"exclude": ["dist", "docs"],
+	"compilerOptions": {
+		"types": ["vitest/globals"],
+		"verbatimModuleSyntax": true,
+		"baseUrl": ".",
+		"paths": {
+			"@components/*": ["src/components/*"],
+			"@layouts/*": ["src/layouts/*"],
+			"@lib/*": ["src/lib/*"]
+		},
+		"jsx": "preserve",
+		"plugins": [
+			{
+				"name": "@astrojs/ts-plugin"
+			}
+		]
+	}
+}
