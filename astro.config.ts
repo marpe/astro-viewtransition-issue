@@ -1,13 +1,12 @@
-import db from "@astrojs/db";
 import { defineConfig } from "astro/config";
 import node from "@astrojs/node";
+import vue from "@astrojs/vue";
 
 export default defineConfig({
   // base: new URL("./", import.meta.url).pathname,
   integrations: [
-    db(),
+    vue(),
   ],
-  db: {},
   output: "server",
   adapter: node({
     mode: "standalone",

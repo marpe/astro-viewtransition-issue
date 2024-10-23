@@ -1,0 +1,19 @@
+---
+import CommonHead from "./CommonHead.astro";
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <CommonHead title={title} />
+  <body>
+    <header>
+      <h1>Astro</h1>
+    </header>
+    <slot />
+  </body>
+</html>

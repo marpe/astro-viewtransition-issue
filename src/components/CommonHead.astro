@@ -1,0 +1,16 @@
+---
+import { ClientRouter } from 'astro:transitions';
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+
+
+<head>
+  <title>Astro - {title}</title>
+  <ClientRouter />
+</head>

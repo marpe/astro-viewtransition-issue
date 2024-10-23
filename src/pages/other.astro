@@ -1,0 +1,10 @@
+---
+import Layout from '../components/Layout.astro'
+import AsyncComponent from '../components/AsyncComponent.vue'
+---
+
+<Layout title="Other Page">
+  <h1>This is other page</h1>
+  <a href="/">Index</a>
+  <AsyncComponent client:only="vue" />
+</Layout>
